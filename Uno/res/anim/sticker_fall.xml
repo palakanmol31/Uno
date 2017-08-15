@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false" xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    	<!-- _________________________________ -->
+    	<!--             END SCALING           -->
+    	<!-- _________________________________ -->
+    	<!-- FRAME 1 -->
+    	<scale android:interpolator = "@android:anim/accelerate_decelerate_interpolator"
+	        android:fromXScale=".8"
+	        android:toXScale="1.0"
+	        android:fromYScale=".8"
+	        android:toYScale="1.0"
+	        android:pivotX="50%"
+	        android:pivotY="50%"
+	        android:duration="250"
+	        android:startOffset="4500"/>
+    	<!-- FRAME 2 -->
+    	<scale android:interpolator = "@android:anim/accelerate_decelerate_interpolator"
+	        android:fromXScale="1.2"
+	        android:toXScale="1.0"
+	        android:fromYScale="1.2"
+	        android:toYScale="1.0"
+	        android:pivotX="50%"
+	        android:pivotY="50%"
+	        android:duration="250"
+	        android:startOffset="4750"/>
+    	
+    	<!-- _________________________________ -->
+    	<!--         SPIN ROTATION             -->
+    	<!-- _________________________________ -->
+    	<!-- FRAME 1 -->
+    	<rotate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	    android:pivotX="50%"
+    	    android:pivotY="50%"
+    	    android:fromDegrees="-30"
+    	    android:toDegrees="30"
+	        android:duration="1000"/>
+    	<!-- FRAME 2 -->
+    	<rotate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	    android:pivotX="50%"
+    	    android:pivotY="50%"
+    	    android:fromDegrees="30"
+    	    android:toDegrees="-30"
+            android:duration="1500"
+            android:startOffset="1000"/>
+    	<!-- FRAME 3 -->
+    	<rotate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	    android:pivotX="50%"
+    	    android:pivotY="50%"
+    	    android:fromDegrees="-30"
+    	    android:toDegrees="0"
+            android:duration="2000"
+            android:startOffset="2500"/>
+    
+    	<!-- _________________________________ -->
+    	<!--         FALLING TRANSLATION       -->
+    	<!-- _________________________________ -->
+    	<translate android:interpolator="@android:anim/decelerate_interpolator"
+    	    android:fromYDelta="200"
+    	    android:toYDelta="0"
+	        android:duration="4500"/>
+    	
+    	<!-- _________________________________ -->
+    	<!--       BOUNCE TRANSLATIONS         -->
+    	<!-- _________________________________ -->
+	    <!-- FRAME 1 -->
+	    <translate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+	        android:fromXDelta="50"
+	        android:toXDelta="-50"
+	        android:duration="1000"/>
+        <!-- FRAME 2 -->
+        <translate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:fromXDelta="-50"
+            android:toXDelta="50"
+            android:duration="1500"
+            android:startOffset="1000"/>
+        <!-- FRAME 3 -->
+        <translate android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:fromXDelta="50"
+            android:toXDelta="0"
+            android:duration="2000"
+            android:startOffset="2500"/>
+    	
+</set>
